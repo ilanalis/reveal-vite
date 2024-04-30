@@ -10,10 +10,251 @@
     <div class="reveal">
       <div class="slides">
         <section>
-          <p>Slide 1</p>
-          <img src="/cat.webp" alt="funny cat" />
+          <h1>OWASP Top 10 Seсurity Risks</h1>
         </section>
-        <section>Slide 2</section>
+        <section>
+          <h2>Here are the three key principles of web app security:</h2>
+
+          <ul>
+            <li>Preventing data loss.</li>
+            <li>Recognizing that security is an ongoing commitment.</li>
+            <li>Safeguarding an organization's reputation and minimizing losses</li>
+          </ul>
+        </section>
+        <section>
+          <section>
+            <p>
+              The <b class="text-bright">Open Web Application Security Project</b>, or <b class="text-bright">OWASP</b>,
+              is an international non-profit organization dedicated to web application security.
+            </p>
+            <div class="logo"><img src="/owasp-logo.png" alt="" /></div>
+          </section>
+          <section>
+            <p class="owasp-text">
+              By understanding the OWASP Top 10, we can build stronger defenses and prevent malicious attacks on
+              websites.
+            </p>
+            <img src="./0.gif" alt="" />
+          </section>
+        </section>
+        <section>
+          <section>
+            <h1>Risk 1: Broken Access Control</h1>
+          </section>
+
+          <section>
+            <p>
+              <b class="text-bright">Threat:</b> Hackers can exploit weaknesses like Missing Authorization Checks or
+              Insecure Access Control Lists to gain unauthorized access to sensitive data, user accounts, or
+              functionalities.
+            </p>
+            <img class="risk-1-gif" src="./7.gif" alt="" />
+          </section>
+          <section>
+            <p>
+              <b class="text-bright">Resolution:</b> Implement strong access control mechanisms like role-based access
+              and proper user authentication.
+            </p>
+            <p>
+              <b class="text-bright">For Front-Enders:</b> Frontenders can ensure that robust authentication mechanisms
+              are in place(MFA or OAuth)
+            </p>
+          </section>
+        </section>
+        <section>
+          <section><h1>Risk 2: Cryptographic Failures</h1></section>
+          <section>
+            <p>
+              <b class="text-bright">Threat:</b> Hackers can crack not adequately secured cryptography and steal your
+              data (passwords, credit card info).
+            </p>
+            <img class="risk-2-gif" src="./2.gif" alt="" />
+          </section>
+          <section>
+            <p>
+              <b class="text-bright">Resolution: </b>Use strong encryption algorithms and keep cryptographic keys
+              secure.
+            </p>
+          </section>
+        </section>
+        <section>
+          <section><h1>Risk 3: Injection Attacks</h1></section>
+          <section>
+            <p>
+              <b class="text-bright">Threat: </b>Hackers can inject malicious code that steals data or disrupts
+              functionality.
+            </p>
+            <img class="risk-3-gif" src="./3.gif" alt="" />
+          </section>
+          <section>
+            <p>
+              <b class="text-bright">Resolution:</b> use a safe API, which avoids using the interpreter entirely,
+              provides a parameterized interface, or migrates to Object Relational Mapping Tools (ORMs).
+            </p>
+            <p>
+              <b class="text-bright">For Front-Enders:</b> By validating user input, we can prevent potentially harmful
+              code from reaching the server.
+            </p>
+          </section>
+        </section>
+        <section>
+          <section><h1>Risk 4: Insecure Design</h1></section>
+          <section>
+            <p><b class="text-bright">Threat:</b> Hackers can exploit security weaknesses easily.</p>
+            <img class="risk-4-gif" src="./4.gif" alt="" />
+          </section>
+          <section>
+            <p>
+              <b class="text-bright">Resolution:</b> Integrate security considerations throughout the development
+              process.
+            </p>
+            <p>
+              <b class="text-bright">For Front-Enders:</b> Be aware of potential security vulnerabilities in front-end
+              code (e.g., cross-site scripting) and follow secure coding practices.
+            </p>
+          </section>
+        </section>
+        <section>
+          <section><h1>Risk 5: Security Misconfiguration</h1></section>
+          <section>
+            <p><b class="text-bright">Threat:</b> Misconfigured security settings leave websites vulnerable.</p>
+            <img class="risk-4-gif" src="./5-.gif" alt="" />
+          </section>
+          <section>
+            <p>
+              <b class="text-bright">Resolution:</b> Double-check security configurations and ensure they are set up
+              correctly.
+            </p>
+          </section>
+        </section>
+        <section>
+          <section><h1>Risk 6: Vulnerable and Outdated Components</h1></section>
+          <section>
+            <p><b class="text-bright">Threat:</b> Hackers love exploiting outdated software components</p>
+            <img class="risk-6-gif" src="./5.gif" alt="" />
+          </section>
+          <section>
+            <b class="text-bright">Resolution: </b>
+            <ul style="font-size: 2rem">
+              keep your website's software components up-to-date:
+              <li>Patch vulnerabilities</li>
+              <li>Update components</li>
+              <li>Keep an eye on updates</li>
+            </ul>
+            <img class="risk-6-r-gif" src="./6-r.gif" alt="" />
+          </section>
+        </section>
+        <section>
+          <section><h1>Risk 7: Identification and Authentication Failures</h1></section>
+          <section>
+            <p>
+              <b class="text-bright">Threat:</b> Websites with weak identification and authentication- easy for
+              attackers to infiltrate. This can lead to stolen data, account takeovers, and even website shutdowns.
+            </p>
+            <img class="risk-6-gif" src="./6.gif" alt="" />
+          </section>
+          <section>
+            <ul>
+              <b class="text-bright">Resolution:</b>
+              Strengthen your defenses with:
+              <li>Strong Passwords & Multi-Factor Authentication (MFA)</li>
+              <li>Secure Session Management</li>
+              <li>Regular Security Updates</li>
+              <li>Secure User Registration</li>
+            </ul>
+
+            <ul>
+              <b class="text-bright">For Front-Enders:</b>
+              <li>Strong password practices: Encourage users to create complex, unique passwords.</li>
+              <li>
+                Design for security: Make it easy for users to enable MFA and create clear error messages during login
+                attempts
+              </li>
+            </ul>
+          </section>
+        </section>
+        <section>
+          <section><h1>Risk 8: Software and Data Integrity Failures</h1></section>
+          <section>
+            <p>
+              <b class="text-bright">Threat:</b> Attackers can exploit vulnerabilities in software or infrastructure to
+              gain access to sensitive information or cause damage to the system.
+            </p>
+            <img class="risk-6-gif" src="./8.gif" alt="" />
+          </section>
+          <section>
+            <p><b class="text-bright">Resolution:</b></p>
+            Protect your project with:
+            <ul>
+              <li>Software Updates</li>
+              <li>Code Review and Testing</li>
+              <li>Data Validation and Sanitization</li>
+              <li>Trustworthy Sources</li>
+            </ul>
+          </section>
+        </section>
+        <section>
+          <section><h1>Risk 9: Security Logging and Monitoring Failures</h1></section>
+          <section>
+            <p>
+              <b class="text-bright">Threat:</b> Without logging and monitoring, breaches cannot be detected.
+              Insufficient logging, detection, monitoring, and active response occurs any time
+            </p>
+            <img class="risk-9-gif" src="./9.gif" alt="" />
+          </section>
+          <section>
+            <p><b class="text-bright">Resolution:</b></p>
+            <ul>
+              <li>Log Everything Important</li>
+              <li>Monitor and Analyze Logs</li>
+              <li>Secure Your Logs</li>
+            </ul>
+          </section>
+        </section>
+        <section>
+          <section><h1>Risk 10: Server-Side Request Forgery</h1></section>
+          <section>
+            <p>
+              <b class="text-bright">The Threat:</b> Hackers can exploit vulnerabilities to trick your server into
+              making unauthorized requests to other servers, potentially leading to data breaches or internal network
+              compromise.
+            </p>
+            <img class="risk-10-gif" src="./10.gif" alt="" />
+          </section>
+          <section>
+            <b class="text-bright">Resolution:</b>
+            <ul>
+              <li>Validate user input</li>
+              <li>Restrict server access to trusted sources</li>
+              <li>Monitor network traffic</li>
+            </ul>
+            <p><b class="text-bright">For Front-Enders:</b></p>
+            <p>Understand SSRF risks and sanitize user input (if applicable). Report suspicious server behavior.</p>
+          </section>
+        </section>
+        <section>
+          <section>
+            <p><b class="text-bright">Key Takeaways:</b></p>
+            <ul>
+              <li>Broken access control, injection attacks, and insecure design are major threats.</li>
+              <li>
+                Front-end developers can make a difference by validating user input, following secure coding practices,
+                and reporting suspicious activity.
+              </li>
+              <li>Secure software updates, strong authentication, and proper logging/monitoring are crucial.</li>
+            </ul>
+            <p>
+              <b class="text-bright"
+                >Together, by understanding these risks and implementing best practices, we can create a safer web for
+                everyone!</b
+              >
+            </p>
+          </section>
+          <section>
+            <p>Thank you for your attention!</p>
+            <img src="./bye.gif" alt="" />
+          </section>
+        </section>
       </div>
     </div>
 
